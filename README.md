@@ -30,10 +30,11 @@ Then only drinks with that specific alcohol will remain visible
 * Arseniy
 
 # Our Logo
-INSERT OUR LOGO
+![Alt text](https://github.com/AlexRahmanov/Project-One-Drinkaholics/blob/main/assets/img/logo1.png)
+
 
 # Our Deployed App; Link to Website and Screenshots
-https://drinkaholics.github.io/Drinkaholics/
+[Drinkaholics](https://alexrahmanov.github.io/Project-One-Drinkaholics/)
 
 a screenshot of our website
 
