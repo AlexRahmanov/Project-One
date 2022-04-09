@@ -33,7 +33,7 @@ Then only drinks with that specific alcohol will remain visible
 INSERT OUR LOGO
 
 # Our Deployed App; Link to Website and Screenshots
-https://drinkaholics.github.io/Drinkaholics/
+[Drinkaholics](https://alexrahmanov.github.io/Project-One-Drinkaholics/)
 
 a screenshot of our website
 
