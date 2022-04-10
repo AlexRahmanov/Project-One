@@ -4,10 +4,6 @@
   --tertiary-color: rgb(39, 37, 37);
 }
 
- html {
-  height: 100%;
-}
-
 /* set styles for the background image */
 .background {
   background: url('../img/img-1.jpg');
@@ -33,7 +29,7 @@ header h1 {
   font-family: Space Bd BT;
   font-size: 40px;
   font-weight: bold;
-  color: white;
+  color: #eae0c8;
   margin-left: 10px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 9);
   
@@ -53,23 +49,23 @@ header a {
   color: aqua;
 }
 
-.hero {
+#description {
   display: flex;
   justify-content: center;
   text-align: center;
   padding: 15px;
   margin-bottom: 50px;
   font-family: Space Bd BT;
-  color: #eae0c8;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 9);
-  font-size: 20px;
+  color: #ffffff;
+  text-shadow: 3px 3px 2px black;
+  font-size: 25px;
 }
 
 .hero-cta h4{
-  color: #eae0c8;
-  font-size: 35px;
+  color: #ffffff;
+  font-size: 40px;
   font-family: Space Bd BT;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 9);
+  text-shadow: 3px 3px 2px black;
 }
 
 /*styles for the search box */
@@ -84,8 +80,15 @@ header a {
   border-radius: 30px;
 }
 
-#recipeSearch {
+#Search {
+  font-family: Space Bd BT;
+}
+
+.card-search button {
+  background-color: var(--primary-color);
+  color: whitesmoke;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 #chooselist {
@@ -96,70 +99,15 @@ header a {
   color:rgb(189, 187, 187);
 }
 
-input.form-input {
-  color:rgb(22, 22, 22);
-  font-style: italic;
-  font-size: 14px;
-  text-align: center;
-}
-
-.card-search button {
-  background-color: var(--primary-color);
-  color: whitesmoke;
+#ingredients {
   border-radius: 10px;
-  cursor: pointer;
-}
-
-#Search {
-  font-family: Space Bd BT;
-}
-
-
-/* styles for the result cards */
-.drink-title {
-  padding-top: 10px;
-  color: var(--primary-color);
-  font-style: italic;
+  text-align: center;
   font-size: 14px;
+  font-style: italic;
+  color:rgb(189, 187, 187);
 }
 
-.drink-title:hover {
-  text-decoration: underline;
-}
-
-.modal {
-  margin-top: 70px;
-  position: fixed; 
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%; 
-  overflow: auto;
-}
-
-.closeBtn {
-  margin: 10px;
-}
-
-#btnClose {
-  margin-top: 20px;
-}
-.card-title {
-  font-weight: bold;
-  font-size: 24px;
-  color: rgb(9, 9, 114);
-}
-
-.card-detail {
-  font-weight: bold;
-  color: rgb(9, 9, 114);
-}
-
-.sourceURL:hover {
-  text-decoration: underline;
-}
-
+/*styles for footer */
 footer {
   display: flex;
   justify-content: space-between;
@@ -188,7 +136,28 @@ footer div {
   text-shadow: 0 0 10px rgba(0, 0, 0, 9);
 }
 
-/* MEDIA QUERY FOR Mobile phones and smaller */
+.divider {
+  border-top: 2px solid rgb(128, 128, 128);
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+img {
+  padding: 5px;
+  max-width: 350px;
+}
+
+
+
 @media screen and (max-width: 575px) {
   header {
     justify-content: center;

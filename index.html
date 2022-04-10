@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drinkaholics</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-  </head>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!--Title-->
+    <title>Drinkaholics</title>
+</head>
 
 <body>
+    <!--Header section-->
     <div class= "background">
         <header>
             <h1>Drinkaholics</h1>
             <a href="https://github.com/Drinkaholics/Drinkaholics" target="_blank">Who We Are</a>  
         </header>
-            
-        <section class="hero">
-            <div class="hero-cta">
+        <!--Welcome description-->
+        <section id="description" class="hero">
+            <div id="p1" class="hero-cta">
                 <h4>Love to drink cocktails? You on the right page!</h4>
                 <p>
                     Drinkaholics is a cocktail creation application tool 
@@ -29,37 +31,41 @@
                 </p>
             </div>
         </section>
-            
-        <main>
-            <div class="card-search">
-                <div style="text-align: left"><img src="./assets/img/logo1.png" width="100" /></div>
-                <h4 id="Search">Search For Drinks <br> or <br> Use Dropdown Menu</h4>
-                <form id="search-form" class="card-body">
-                    <select name="chooseingredient" id="chooselist">
-                        <option value="" disabled selected hidden>Choose an ingredient</option>
-                        <option value=""></option>
-                        <input name="recipe" id="recipeSearch" type="text" autofocus="true" class="form-input" placeholder="Type your favorite Drinkaholics drink" />
-                        <button type="search" class="btn" id="searchBtn">Search</button>
-                </form>
-            </div>
-
-            <!--Search results desplayed here -->
-            <div class="grid-container">
-                <div class="grid-x grid-margin-x" id="cards-container">
-
-                </div>
-            </div>
-                
-            <!-- Modal HTML embedded directly into document -->
-            <div id="drink-modal" class="modal">
-                <div id="htmlText2">
-
-                </div>
-            </div>
-            
-        </main>
     </div>
+
+    <main>
         
+        <div class="card-search">
+            <div style="text-align: center"><img src="./assets/img/logo1.png" width="150" /></div>
+            <h2 id="Search" class="card-title bold">Search For Drinks <br> or <br> Use Dropdown Menu</h2>
+            <form id="search-form">
+                <!--Placeholder and dropdown menu-->
+                    <select name="chooseingredient" id="chooselist">
+                        <option id="choose" value="" disabled selected>Choose your option</option>
+                    </select>
+                    <input input type="text" placeholder="Type your drink" id="ingredients">
+                    <button type="click" class="button expanded" id="submit-button">Search</button>
+                </form>
+                <!--Button section-->
+                <div class="expanded button-group">
+                    <button class="button" id="reset">Reset</button>
+                    <button class="button" id="saved">Saved Cocktails</button>
+                </div>
+            <!--Search history div-->
+            <div class="divider">
+                <ul id="search-history" class = "browser-default"></ul>
+            </div>
+        </div>
+
+        <div>
+            <h2 id = "displaytitle"></h2>
+            <div class = "card" id = "iteminfo">
+            </div>
+            <div id = "displaylist" class = "flex-row"></div>
+        </div>
+    </main>
+
+<!--Footer section-->
     <footer>
         <h6>
             Made by The Team 3 UofT
@@ -69,15 +75,7 @@
         </div>
     </footer>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation-float.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation-prototype.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation-rtl.min.css" crossorigin="anonymous">
-    <!-- jQuery Modal -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-    <script src="./assets/js/script.js"></script> 
-    </div>
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
-
 </html>
