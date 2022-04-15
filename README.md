@@ -34,6 +34,7 @@ Then only drinks with that specific alcohol will remain visible
 
 # Our Deployed App; Link to Website and Screenshots
 [Drinkaholics Link](https://alexrahmanov.github.io/Project-One-Drinkaholics/)
+
 https://github.com/noplur/weather-dashboard
 
 a screenshot of our website
